@@ -1,0 +1,174 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style for the logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 150px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+/* Hero Video Background */
+.hero-video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #c70039;
+}
+
+/* Deals Hero Image */
+.deals-hero {
+    position: relative;
+    background: url('cappadocia-balloons.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.deals-hero h1 {
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for better contrast */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Overlay Deals Section */
+.overlay-deals {
+    position: absolute;
+    top: 150px; /* Adjust based on how high you want the deals */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.deal-item {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.deal-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.deal-details h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.deal-details p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.book-now {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Style for the WhatsApp Button */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    z-index: 1000; /* Bring the button to the front */
+    position: relative; /* Ensure it's not affected by absolute positioning */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Center WhatsApp booking on deals page */
+.whatsapp-booking {
+    text-align: center;
+    margin: 30px 0;
+    z-index: 1000; /* Ensure it's above other elements */
+    position: relative;
+}
