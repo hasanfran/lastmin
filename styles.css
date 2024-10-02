@@ -1,21 +1,13 @@
-/* General styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Style for the logo */
+/* Logo Styling */
 .logo {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 10;
 }
 
 .logo img {
-    width: 150px; /* Adjust the size of the logo as needed */
+    width: 150px;
     height: auto;
 }
 
@@ -23,19 +15,21 @@ body {
 .hero-video {
     position: relative;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
-#background-video {
+video {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
+/* Hero Content Styling */
 .hero-content {
     position: relative;
     z-index: 1;
@@ -58,117 +52,92 @@ body {
     margin-bottom: 20px;
 }
 
-.cta-button {
-    background-color: #ff5733;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #c70039;
-}
-
-/* Deals Hero Image */
-.deals-hero {
-    position: relative;
-    background: url('cappadocia-balloons.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.deals-hero h1 {
-    font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.6); /* Dark background for better contrast */
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-/* Overlay Deals Section */
-.overlay-deals {
-    position: absolute;
-    top: 150px; /* Adjust based on how high you want the deals */
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.deal-item {
+/* Ticket Design */
+.ticket {
     background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    position: relative;
 }
 
-.deal-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+/* Left side of ticket */
+.ticket-left {
+    text-align: left;
 }
 
-.deal-details h3 {
-    font-size: 1.5rem;
+.ticket-left h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.ticket-left p {
     margin: 10px 0;
+    font-size: 1.2rem;
 }
 
-.deal-details p {
-    font-size: 1.2rem;
+.ticket-left .small-text {
+    font-size: 0.9rem;
     color: #777;
 }
 
-.book-now {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+/* Right side of ticket with perforation */
+.ticket-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.book-now:hover {
-    background-color: #218838;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    position: relative;
+.ticket-perforation {
+    position: absolute;
+    top: 0;
     bottom: 0;
-    width: 100%;
+    right: 150px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-/* Style for the WhatsApp Button */
-.whatsapp-button {
-    background-color: #25D366;
+
+.circle {
+    background-color: white;
+    border: 2px solid #ddd;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle.left {
+    left: -10px;
+}
+
+.circle.right {
+    right: -10px;
+}
+
+/* Buy Button Styling */
+.buy-button {
+    background-color: #ff5733;
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
-    z-index: 1000; /* Bring the button to the front */
-    position: relative; /* Ensure it's not affected by absolute positioning */
-}
-
-.whatsapp-button:hover {
-    background-color: #128C7E;
-}
-
-/* Center WhatsApp booking on deals page */
-.whatsapp-booking {
     text-align: center;
-    margin: 30px 0;
-    z-index: 1000; /* Ensure it's above other elements */
-    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buy-button:hover {
+    background-color: #c70039;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
 }

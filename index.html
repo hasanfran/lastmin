@@ -10,17 +10,32 @@
     <header class="hero-video">
         <!-- Logo on the top-right corner -->
         <div class="logo">
-            <img src="logo.png" alt="Last Minute Logo">
+            <img src="images/logo.png" alt="Last Minute Logo">
         </div>
-        <video autoplay muted loop id="background-video">
-            <source src="cappadocia-video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
+        <video autoplay muted loop playsinline>
+            <source src="videos/cappadocia-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
         <div class="hero-content">
             <h1>Last-Minute Balloon Flights in Cappadocia</h1>
             <p>Discover amazing deals on balloon flights for tomorrow. Book now and experience the beauty of Cappadocia from the sky!</p>
-            <a href="deals.html" class="cta-button">Check Today's Deals</a>
-            <a href="https://wa.me/905302702590?text=Hello!%20I%20would%20like%20to%20book%20a%20last-minute%20balloon%20flight%20for%20Cappadocia.%20Please%20provide%20more%20details." class="whatsapp-button">Book via WhatsApp</a>
+
+            <!-- New Ticket design for Tomorrow's Best Deal -->
+            <div class="ticket">
+                <div class="ticket-left">
+                    <h2>Tomorrow's Best Deal</h2>
+                    <p>Standard Balloon Flight</p>
+                    <p>Price: <strong>€200</strong></p>
+                    <p class="small-text">Includes insurance, champagne celebration, and certificate.</p>
+                </div>
+                <div class="ticket-right">
+                    <div class="ticket-perforation">
+                        <div class="circle left"></div>
+                        <div class="circle right"></div>
+                    </div>
+                    <a href="https://wa.me/905302702590?text=Hello!%20I%20would%20like%20to%20book%20a%20last-minute%20balloon%20flight%20for%20Cappadocia.%20Please%20provide%20more%20details." class="buy-button">BUY</a>
+                </div>
+            </div>
         </div>
     </header>
 </body>
